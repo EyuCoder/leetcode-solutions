@@ -1,4 +1,4 @@
-package com.codexo;
+package com.codexo.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;

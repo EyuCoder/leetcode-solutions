@@ -1,4 +1,4 @@
-package com.codexo;
+package com.codexo.arrays;
 
 //https://leetcode.com/problems/trapping-rain-water/
 public class Trap {

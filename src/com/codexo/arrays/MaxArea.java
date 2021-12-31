@@ -1,4 +1,4 @@
-package com.codexo;
+package com.codexo.arrays;
 
 //https://leetcode.com/problems/container-with-most-water/
 public class MaxArea {
