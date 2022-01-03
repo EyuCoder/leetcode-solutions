@@ -1,38 +1,15 @@
 package com.codexo.linkedlists;
 
 // https://leetcode.com/problems/reverse-linked-list
+public class ReverseLinkedList {
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    @Override
-    public String toString() {
-        return "next";
-    }
-}
-
-/**
- * Time Complexity: O(n) Linear
- * Space Complexity: O(1) constant
- */
-public class ReverseLinkedlist {
-
+    /**
+     * Time Complexity: O(n) Linear
+     * Space Complexity: O(1) constant
+     */
     public static ListNode reverseList(ListNode head) {
         ListNode prev = null;
-        ListNode next = null;
+        ListNode next;
 
         while (head != null) {
             next = head.next;
