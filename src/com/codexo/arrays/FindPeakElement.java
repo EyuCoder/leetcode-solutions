@@ -33,15 +33,15 @@ public class FindPeakElement {
 
     public static void main(String[] args) {
         // O(n) by traversing the array
-        int result = findPeakElementBrute(new int[]{3, 4, 5, 1, 2});
-        System.out.println(result); // 1
-        result = findPeakElementBrute(new int[]{4, 5, 6, 7, 0, 1, 2});
-        System.out.println(result); // 0
+        int result = findPeakElementBrute(new int[]{1,2,3,1});
+        System.out.println(result); // index 2
+        result = findPeakElementBrute(new int[]{1,2,1,3,5,6,4});
+        System.out.println(result); // index 5 or 1
 
         // Optimal solution using Binary Search
-        result = findPeakElementOptimal(new int[]{3, 4, 5, 1, 2});
-        System.out.println(result); // 1
-        result = findPeakElementOptimal(new int[]{4, 5, 6, 7, 0, 1, 2});
-        System.out.println(result); // 0
+        result = findPeakElementOptimal(new int[]{1,2,3,1});
+        System.out.println(result); // index 2
+        result = findPeakElementOptimal(new int[]{1,2,1,3,5,6,4});
+        System.out.println(result); // index 5 or 1
     }
 }
