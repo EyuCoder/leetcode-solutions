@@ -34,6 +34,33 @@ public class RightSideView {
         return visibleValues;
     }
 
+    /**
+     * DFS
+     * Time Complexity: O(n) Linear
+     * Space Complexity: O(n) Linear
+     */
+    public static List<Integer> rightSideViewDFS(TreeNode root) {
+        List<Integer> visibleValues = new ArrayList<>();
+        DFS(root, 0, visibleValues);
+        return visibleValues;
+    }
+
+    private static void DFS(TreeNode node, int currentLevel, List<Integer> visibleValues) {
+        if (node == null) return;
+
+        if (currentLevel >= visibleValues.size()) {
+            visibleValues.add(node.val);
+        }
+
+        if (node.right != null) {
+            DFS(node.right, currentLevel + 1, visibleValues);
+        }
+
+        if (node.left != null) {
+            DFS(node.left, currentLevel + 1, visibleValues);
+        }
+    }
+
     public static void main(String[] args) {
         TreeNode tree = new TreeNode(1,
                 new TreeNode(2, null,
@@ -41,6 +68,7 @@ public class RightSideView {
                 new TreeNode(3, null,
                         new TreeNode(4)));
 
-        System.out.println(rightSideView(tree)); // [1,3,4]
+        System.out.println(rightSideView(tree)); // [1,3,4] BFS
+        System.out.println(rightSideViewDFS(tree)); // [1,3,4] DFS
     }
 }
