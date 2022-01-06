@@ -48,6 +48,6 @@ public class RemoveDuplicatesSortedList {
 
         // Optimal solution Using Sentinel Node
         printList(listNode);
-        printList(deleteDuplicates(listNode));
+        printList(deleteDuplicates(listNode)); // 1 -> 2 -> 5
     }
 }
