@@ -4,11 +4,12 @@ package com.codexo.trees;
 public class MaxDepthOfBinaryTree {
 
     /**
+     * DFS
      * Time Complexity: O(n) Linear
      * Space Complexity: O(n) Linear
      */
     public static int maxDepth(TreeNode root) {
-        return maxDepth(root, 0);
+        return maxDepth(root, 0); // DFS
     }
 
     private static int maxDepth(TreeNode node, int currentDepth) {
