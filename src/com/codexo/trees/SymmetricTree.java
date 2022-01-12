@@ -7,6 +7,7 @@ public class SymmetricTree {
      * Space Complexity: O(1) Constant
      */
     public static boolean isSymmetric(TreeNode root) {
+        if (root == null) return true;
         return symmetric(root.left, root.right);
     }
     private static boolean symmetric(TreeNode p, TreeNode q){
